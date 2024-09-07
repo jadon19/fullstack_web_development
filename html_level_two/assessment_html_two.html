@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+
+<body>
+    <h1>Course Sign up </h1>
+    <p>Please note: Personal details are required to set up an account and to complete your enrollment in the Course
+        successfully!</p>
+    <form action="thankyou.html" method="get">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="fname">First Name : </label>
+            <input type="text" name="firstname" id="fname" placeholder="Enter your first name!" required>
+
+            <label for="lname">Last Name : </label>
+            <input type="text" name="lastname" id="lname" placeholder="Enter your last name!" required>
+
+
+            <br>
+            <br>
+            <label for="useremail">Email id : </label>
+            <input type="email" name="em" id="useremail" required>
+
+            <label for="userpassword">User Password : </label>
+            <input type="password" name="pass" id="userpassword" required>
+        </fieldset>
+
+
+
+        <p>Are you over the age of 18?</p>
+
+        <input type="radio" name="age" id="above18" value="1">
+        <label for="above18">Yes</label>
+        <input type="radio" name="age" id="below18" value="0">
+        <label for="below18">No</label>
+
+
+        <p>Courses Available</p>
+
+        <label for="Course">Select your Course : </label>
+        <input list="Courses" name="Course_enrolled" id="Course">
+        <datalist id="Courses">
+            <optgroup label="Data Science">
+                <option value="ml">Machine learning</option>
+                <option value="dl">Deep learning</option>
+                <option value="cv">Computer Vision</option>
+            </optgroup>
+
+            <optgroup label="Back-end Development">
+                <option value="dj">Django</option>
+                <option value="sql">Mysql</option>
+
+            </optgroup>
+
+            <optgroup label="Development"></optgroup>
+            <option value="html">HTML</option>
+            <option value="js">JavaScript</option>
+            <option value="css">CSS</option>
+            <option value="njs">Node.js</option>
+            </optgroup>
+        </datalist>
+
+        <label for="payment">Select Payment Method</label>
+        <select name="pay" id="payment">
+            <option value="upi">UPI Transaction</option>
+            <option value="card">Credit/Debit Card</option>
+            <option value="nb">Net banking</option>
+        </select>
+        <br><br>
+        <input type="submit" onclick="alert('Thanks you for enrolling!')">
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Selection</title>
+</head>
+<body>
+    <h1>Hotel Feedback Form</h1>
+    <form method="get">
+
+
+        <h3>Are you from US?</h3>
+
+        <input id="inus" type="radio" name="loc" value="inside" >
+        <label for="inus">Yes</label>
+
+        
+        <input id="outus" type="radio" name="loc" value="outside">
+        <label for="outus">No</label>
+
+        <!-- In order to select only one of those 2, we use the name attribute! -->
+
+
+        <h3>How was our service?</h3>
+        <!-- We create a dropdown menu -->
+        <select name="stars">
+            <option value="1">bad</option>
+            <option value="2">decent</option>
+            <option value="3">satisfactory</option>
+            <option value="4">good</option>
+            <option value="5">great</option>
+        <!-- name=value in url -->
+        </select>
+
+    <h3>Any other Feedback?</h3>
+
+    <textarea name="feeds" rows="5" cols="30"></textarea>
+
+
+    <input type="submit" name="" id="">
+
+    </form>
+</body>
+</html>
