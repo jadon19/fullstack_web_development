@@ -1,0 +1,20 @@
+/* general syntex to define properties */
+
+/* selected tag{
+    property: value
+} */
+h1{
+    color: blue;
+}
+ol{
+    color: blueviolet;
+}
+ul{
+    color: rgba(2, 122, 110,0.7);
+}
+p{
+    color: rgb(232, 173, 7);
+}
+h4{
+    color: #78025e;
+}
